@@ -157,6 +157,9 @@ nav a:hover {
 img#face {
     display:block;
     width:100%;
+    user-drag: none; 
+    -moz-user-select: none;
+    -webkit-user-drag: none;
 }
 
 #face-container{
@@ -164,6 +167,8 @@ img#face {
     max-width:1800px;
     margin:0 auto;
     padding:0;
+
+    /*background: no-repeat center/100% url(../img/rubio.jpg); */
 
     cursor: url(../img/cursor_eel.png) 52 128, auto;
 }
