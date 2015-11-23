@@ -164,6 +164,7 @@ img#face {
 
 #face-container{
     position:relative;
+    width:100%;
     max-width:1800px;
     margin:0 auto;
     padding:0;
@@ -176,7 +177,7 @@ img#face {
 }
 
 .spot{
-    opacity: .8;
+    opacity: .7;
     position:absolute;
     z-index:2;
 
