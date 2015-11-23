@@ -163,8 +163,7 @@ img#face {
 }
 
 #face-container{
-    position:absolute;
-    width:100%;
+    position:relative;
     max-width:1800px;
     margin:0 auto;
     padding:0;
