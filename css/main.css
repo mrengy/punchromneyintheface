@@ -163,12 +163,11 @@ img#face {
 }
 
 #face-container{
+    position:absolute;
     width:100%;
     max-width:1800px;
     margin:0 auto;
     padding:0;
-
-    /*background: no-repeat center/100% url(../img/rubio.jpg); */
 
     cursor: url(../img/cursor_eel.png) 52 128, auto;
 }
@@ -177,9 +176,16 @@ img#face {
     cursor: url(../img/cursor_eel_rotated.png) 127 127, auto;
 }
 
+.spot{
+    opacity: .8;
+    position:absolute;
+    z-index:2;
 
+}
 
-
+#original-spot{
+    display:none;
+}
 
 
 /* ==========================================================================
