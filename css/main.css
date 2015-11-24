@@ -162,7 +162,7 @@ img#face {
     -webkit-user-drag: none;
 }
 
-#face-container{
+#face-container {
     position:relative;
     width:100%;
     max-width:1800px;
@@ -172,18 +172,21 @@ img#face {
     cursor: url(../img/cursor_eel.png) 52 128, auto;
 }
 
-#face-container.punching{
+#face-container.punching {
     cursor: url(../img/cursor_eel_rotated.png) 127 127, auto;
 }
 
-.spot{
-    opacity: .7;
+.spot {
+    opacity: .6;
     position:absolute;
     z-index:2;
+    user-drag: none; 
+    -moz-user-select: none;
+    -webkit-user-drag: none;
 
 }
 
-#original-spot{
+#original-spot {
     display:none;
 }
 
