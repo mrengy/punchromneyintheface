@@ -1,5 +1,6 @@
 $( document ).ready(function() {
-	$('audio#eel').trigger('load');
+    preloadCursors(); 
+    $('audio#eel').trigger('load');
     var spotCounter = 1;
 	var eelWidth=127;
 	var eelHeight=127;
@@ -13,4 +14,22 @@ $( document ).ready(function() {
     $('#face-container').mouseup(function(){
     	$(this).removeClass('punching');
     });
+
+    function preloadCursors(){
+         // counter
+         var i = 0;
+
+         // create object
+         imageObj = new Image();
+
+         // set image list
+         images = new Array();
+         images[0]='img/cursor_eel_rotated.png';
+
+         // start preloading
+         for(i=0; i<=(images.length-1); i++) 
+         {
+              imageObj.src=images[i];
+         }
+    }
 });
