@@ -13,6 +13,11 @@ $( document ).ready(function() {
     });
     $('#face-container').mouseup(function(){
     	$(this).removeClass('punching');
+        if (ga){
+            //if google analytics is loaded, trigger event for punch
+            ga('send', 'event', 'face', 'punch', 'eel', 1);
+            console.log('tracked punch');
+        }
     });
 
     function preloadCursors(){
