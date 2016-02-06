@@ -173,11 +173,11 @@ img#face {
     margin:0 auto;
     padding:0;
 
-    cursor: url(../img/cursor_eel.png) 52px 128px, auto;
+    cursor: url(../img/cursor_eel.png) 52 128, auto;
 }
 
 #face-container.punching {
-    cursor: url(../img/cursor_eel_rotated.png) 127px 127px, auto;
+    cursor: url(../img/cursor_eel_rotated.png) 127 127, auto;
 }
 
 .spot {
