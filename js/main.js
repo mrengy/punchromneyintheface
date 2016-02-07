@@ -2,7 +2,7 @@ $( document ).ready(function() {
     preloadCursors(); 
     $('audio#eel').trigger('load');
     var spotCounter = 1;
-    if (Modernizr.touch){
+    if (Modernizr.touchevents){
     	var eelWidth=0;
     	var eelHeight=0;
     } else {
