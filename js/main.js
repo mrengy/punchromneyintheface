@@ -3,8 +3,8 @@ $( document ).ready(function() {
     $('audio#eel').trigger('load');
     var spotCounter = 1;
     if (Modernizr.touchevents){
-    	var eelWidth=0;
-    	var eelHeight=0;
+    	var eelWidth=35;
+    	var eelHeight=30;
     } else {
         var eelWidth=127;
         var eelHeight=127;
