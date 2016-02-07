@@ -2,8 +2,13 @@ $( document ).ready(function() {
     preloadCursors(); 
     $('audio#eel').trigger('load');
     var spotCounter = 1;
-	var eelWidth=127;
-	var eelHeight=127;
+    if (Modernizr.touchevents){
+    	var eelWidth=0;
+    	var eelHeight=0;
+    } else {
+        var eelWidth=127;
+        var eelHeight=127;
+    }
 
     $('#face-container').mousedown(function(event){
     	$(this).addClass('punching');
@@ -16,7 +21,6 @@ $( document ).ready(function() {
         if (ga){
             //if google analytics is loaded, trigger event for punch
             ga('send', 'event', 'face', 'punch', 'eel', 1);
-            console.log('tracked punch');
         }
     });
 
