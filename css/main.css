@@ -157,24 +157,42 @@ nav a:hover {
 img#face {
     display:block;
     width:100%;
+    user-drag: none; 
+    -webkit-user-drag: none;
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;
+    -ms-user-select: none;      /* IE 10+ */
+    -o-user-select: none;
+    user-select: none;
 }
 
-#face-container{
+#face-container {
+    position:relative;
     width:100%;
     max-width:1800px;
     margin:0 auto;
     padding:0;
 
-    cursor: url(../img/cursor_eel.png) 52 128, auto;
+    cursor: url(../img/cursor_eel.png) 51 127, auto;
 }
 
-#face-container.punching{
-    cursor: url(../img/cursor_eel_rotated.png) 127 127, auto;
+#face-container.punching {
+    cursor: url(../img/cursor_eel_rotated.png) 126 126, auto;
 }
 
+.spot {
+    opacity: .6;
+    position:absolute;
+    z-index:2;
+    user-drag: none; 
+    -moz-user-select: none;
+    -webkit-user-drag: none;
 
+}
 
-
+#original-spot, audio {
+    display:none;
+}
 
 
 /* ==========================================================================
@@ -315,68 +333,4 @@ img#face {
 
 .clearfix {
     *zoom: 1;
-}
-
-/* ==========================================================================
-   Print styles
-   ========================================================================== */
-
-@media print {
-    *,
-    *:before,
-    *:after {
-        background: transparent !important;
-        color: #000 !important;
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
-
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
-
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
-
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
-
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
-    }
-
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-
-    thead {
-        display: table-header-group;
-    }
-
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-
-    img {
-        max-width: 100% !important;
-    }
-
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
 }
